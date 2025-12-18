@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_recipes" />
+        <item
+            android:id="@+id/nav_vitamins"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_vitamins" />
+        <item
+            android:id="@+id/nav_health_tips"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_health_tips" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="注册" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="反馈" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="联系我们" />
+        <item
+            android:id="@+id/nav_weight_assess"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="体重评估" />
+    </group>
+</menu>

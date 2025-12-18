@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_recipes">
+
+    <fragment
+        android:id="@+id/nav_recipes"
+        android:name="com.example.myapplication.ui.recipes.RecipesFragment"
+        android:label="@string/menu_recipes"
+        tools:layout="@layout/fragment_recipes">
+        <action
+            android:id="@+id/action_nav_recipes_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.example.myapplication.ui.auth.RegisterFragment"
+        android:label="注册"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.myapplication.ui.feedback.FeedbackFragment"
+        android:label="反馈"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.myapplication.ui.contact.ContactUsFragment"
+        android:label="联系我们"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_weight_assess"
+        android:name="com.example.myapplication.ui.tools.WeightAssessFragment"
+        android:label="体重评估"
+        tools:layout="@layout/fragment_weight_assess" />
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.example.myapplication.ui.recipes.RecipeDetailFragment"
+        android:label="食谱详情"
+        tools:layout="@layout/fragment_recipe_detail">
+        <argument
+            android:name="recipeId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vitamins"
+        android:name="com.example.myapplication.ui.vitamins.VitaminsFragment"
+        android:label="@string/menu_vitamins"
+        tools:layout="@layout/fragment_vitamins">
+        <action
+            android:id="@+id/action_nav_vitamins_to_vitaminDetailFragment"
+            app:destination="@id/vitaminDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vitaminDetailFragment"
+        android:name="com.example.myapplication.ui.vitamins.VitaminDetailFragment"
+        android:label="维生素详情"
+        tools:layout="@layout/fragment_vitamin_detail">
+        <argument
+            android:name="vitaminId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_health_tips"
+        android:name="com.example.myapplication.ui.healthtips.HealthTipsFragment"
+        android:label="@string/menu_health_tips"
+        tools:layout="@layout/fragment_health_tips">
+        <action
+            android:id="@+id/action_nav_health_tips_to_healthTipDetailFragment"
+            app:destination="@id/healthTipDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/healthTipDetailFragment"
+        android:name="com.example.myapplication.ui.healthtips.HealthTipDetailFragment"
+        android:label="健康小贴士详情"
+        tools:layout="@layout/fragment_health_tip_detail">
+        <argument
+            android:name="tipId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

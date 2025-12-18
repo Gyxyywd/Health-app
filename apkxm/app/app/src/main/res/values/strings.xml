@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">健康管理</string>
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="nav_header_title">健康管理应用</string>
+    <string name="nav_header_subtitle">Health App</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">设置</string>
+
+    <string name="menu_recipes">健康食谱</string>
+    <string name="menu_vitamins">维生素</string>
+    <string name="menu_health_tips">健康小贴士</string>
+</resources>
